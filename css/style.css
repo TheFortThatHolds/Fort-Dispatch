@@ -496,3 +496,10 @@ body {
     color: var(--fort-ink);
     text-decoration: underline;
 }
+
+.closing-note {
+    font-style: italic;
+    color: var(--fort-border-dark);
+    margin-top: var(--spacing-xs);
+}
+
