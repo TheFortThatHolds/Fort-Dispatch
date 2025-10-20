@@ -367,3 +367,132 @@ body {
         justify-content: center;
     }
 }
+
+.archive-layout .archive-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    gap: var(--spacing-sm);
+}
+
+.archive-list li {
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px dotted var(--fort-border-dark);
+}
+
+.archive-date {
+    display: block;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fort-border-dark);
+}
+
+.archive-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--fort-ink);
+}
+
+.archive-link:hover {
+    text-decoration: underline;
+}
+
+.archive-meta {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--fort-border-dark);
+}
+
+.archive-filters {
+    display: grid;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+.filter-row {
+    border: 1px solid var(--fort-border);
+    padding: var(--spacing-sm);
+    background: #fdfbf7;
+}
+
+.filter-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--fort-border-dark);
+}
+
+.filter-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-xs);
+}
+
+.filter-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--fort-black);
+    background: #fff8e1;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.crew-list {
+    list-style: none;
+    margin-top: var(--spacing-xs);
+}
+
+.crew-list li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.subscribe-cta.align-left {
+    justify-content: flex-start;
+}
+
+
+
+.action-sections {
+    display: grid;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+.action-section {
+    border: 1px solid var(--fort-border);
+    background: #ffffff;
+    padding: var(--spacing-sm) var(--spacing-md);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.action-section h4 {
+    font-size: 0.95rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-xs);
+    color: var(--fort-border-dark);
+}
+
+.action-steps {
+    margin-left: 1rem;
+    display: grid;
+    gap: var(--spacing-xs);
+    counter-reset: action-step;
+}
+
+.action-steps li {
+    background: #fdfbf7;
+    border-left: 3px solid var(--fort-red);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.action-steps a {
+    color: var(--fort-ink);
+    text-decoration: underline;
+}
