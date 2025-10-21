@@ -164,6 +164,13 @@ body {
     border-right: 1px solid var(--fort-border);
 }
 
+.col-wide {
+    grid-column: 1 / span 8;
+    margin-top: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+    border-right: 1px solid var(--fort-border);
+}
+
 .section-heading {
     font-size: 1.1rem;
     font-weight: 700;
@@ -460,7 +467,7 @@ body {
     display: grid;
     gap: var(--spacing-md);
     margin-top: var(--spacing-sm);
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .action-section {
@@ -527,6 +534,3 @@ body {
     height: 320px;
     border: none;
 }
-
-
-
