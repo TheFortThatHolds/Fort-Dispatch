@@ -21,75 +21,43 @@
             padding: 2rem;
         }
 
-        .archive {
-            max-width: 780px;
+        .archive-card {
+            max-width: 640px;
             width: 100%;
             background: #fff;
             border: 1px solid #ccc;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-            padding: 3rem 3.5rem;
+            padding: 3rem;
+            text-align: center;
         }
 
-        .archive__title {
-            font-size: 2.5rem;
-            margin: 0 0 1rem;
+        .archive-card h1 {
+            font-size: 2.4rem;
+            margin: 0 0 1.25rem;
             letter-spacing: 0.04em;
             text-transform: uppercase;
         }
 
-        .archive__intro {
-            margin: 0 0 2.5rem;
-            font-size: 1.1rem;
+        .archive-card p {
+            font-size: 1.05rem;
             line-height: 1.6;
             color: #555;
+            margin: 0 0 2rem;
         }
 
-        .issues {
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        .issue {
-            border-top: 2px solid #222;
-            padding-top: 1.2rem;
-        }
-
-        .issue__meta {
-            font-size: 0.85rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: #777;
-            margin-bottom: 0.35rem;
-        }
-
-        .issue__title {
-            font-size: 1.6rem;
-            margin: 0.1rem 0 0.75rem;
-        }
-
-        .issue__summary {
-            margin: 0 0 0.75rem;
-            line-height: 1.5;
-            color: #444;
-        }
-
-        .issue__link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
+        .archive-card .cta {
+            display: inline-block;
+            padding: 0.85rem 2.5rem;
+            background: #222;
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
-            color: #222;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
 
-        .issue__link span {
-            font-size: 1.4rem;
-            transform: translateY(-1px);
-        }
-
-        .coming-soon {
-            color: #888;
-            font-style: italic;
+        .archive-card .cta:hover {
+            background: #111;
         }
 
         @media (max-width: 640px) {
@@ -97,33 +65,21 @@
                 padding: 1.5rem;
             }
 
-            .archive {
+            .archive-card {
                 padding: 2.5rem;
             }
 
-            .archive__title {
+            .archive-card h1 {
                 font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
-    <main class="archive">
-        <h1 class="archive__title">Fort Dispatch Archive</h1>
-        <p class="archive__intro">Browse previously published issues of the Fort Dispatch. Each edition gets tucked away here once a new issue goes live on the home page.</p>
-        <section class="issues" aria-label="Archived issues">
-            <article class="issue">
-                <div class="issue__meta">Launch Issue</div>
-                <h2 class="issue__title">October 19, 2025 Edition</h2>
-                <p class="issue__summary">The inaugural newsroom drop that set the tone for Fort Dispatch. Stories, community highlights, and the weekend briefing all in one edition.</p>
-                <a class="issue__link" href="10192025.html">Read Issue <span aria-hidden="true">&#8594;</span></a>
-            </article>
-            <article class="issue">
-                <div class="issue__meta">Future Issues</div>
-                <h2 class="issue__title">Coming Soon</h2>
-                <p class="issue__summary coming-soon">Each new publication will move here once the next issue goes live. Check back after release days for the latest archive updates.</p>
-            </article>
-        </section>
+    <main class="archive-card">
+        <h1>Fort Dispatch Archive</h1>
+        <p>Past issues will land here as the newsroom grows. Until then, catch the latest dispatch to stay current with the pattern.</p>
+        <a class="cta" href="index.html">Return to Current Dispatch</a>
     </main>
 </body>
 </html>
