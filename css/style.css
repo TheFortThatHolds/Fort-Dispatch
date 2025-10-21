@@ -460,7 +460,7 @@ body {
     display: grid;
     gap: var(--spacing-md);
     margin-top: var(--spacing-sm);
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .action-section {
@@ -527,5 +527,6 @@ body {
     height: 320px;
     border: none;
 }
+
 
 
